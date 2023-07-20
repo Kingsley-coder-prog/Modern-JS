@@ -35,6 +35,8 @@ console.log(lastPost);
 const lastPost2 = await getLastPost();
 console.log(lastPost2);
 */
+
+/*
 const ShoppingCart2 = (function () {
   const cart = [];
   const shippingCost = 10;
@@ -51,10 +53,23 @@ const ShoppingCart2 = (function () {
     console.log(`${quantity} ${product} ordered from supplier`);
   };
 
-  return { addToCart, cart, totalPrice, totalQuantity };
+  return { addToCart, cart, totalPrice, totalQuantity, orderStock };
 })();
 
 ShoppingCart2.addToCart('apple', 4);
 ShoppingCart2.addToCart('pizza', 2);
-// ShoppingCart2.orderStock('mosleu', 5);
-// ShoppingCart2.orderStock('avocado', 3);
+ShoppingCart2.orderStock('mosleu', 5);
+ShoppingCart2.orderStock('avocado', 3);
+*/
+
+/////////////////////////////////////////////////
+// CommonJS
+
+// Export
+// export.addToCart = function (product, quantity) {
+//     cart.push({ product, quantity });
+//     console.log(`${quantity} ${product} added to cart`);
+// };
+
+// Import
+// const { addToCart } = require('./shoppingCart.js');
